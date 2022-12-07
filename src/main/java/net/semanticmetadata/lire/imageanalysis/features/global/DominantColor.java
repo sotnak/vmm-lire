@@ -13,7 +13,7 @@ public class DominantColor extends DominantColorImpl implements GlobalFeature {
     @Override
     public void extract(BufferedImage image) {
 
-        int imprecision = 16;       // r/imprecision g/imprecision b/imprecision a/imprecision
+        int imprecision = 32;       // r/imprecision g/imprecision b/imprecision a/imprecision
         int numOfPoints = 10000;      // every (jumpDistance)th pixel in row and column
         Pair<RGBA, Double> maxEntry = getDominantRGBA(image, imprecision, numOfPoints);
 
